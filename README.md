@@ -1,9 +1,11 @@
 # StringMan
 
+![GitHub](https://img.shields.io/github/license/c0der4t/StringMan?style=for-the-badge)
+
 One of the first, small but personally great, projects in my portfolio. Kept private until now.
 
 Stringman is a small and easy utility that I use on a daily basis. 
-A similar repo of mine FileLineEditor is based on Stringman, infact it was a mutation built for a client.
+A similar repo of mine [FileLineEditor](https://github.com/c0der4t/FileLineEditor) is based on Stringman, infact it was a mutation built for a client.
 
 Stringman is easy to use, just add some text into the input field, define some prefix and suffix and in one click you get the altered version of the text.
 
