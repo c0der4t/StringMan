@@ -1,0 +1,115 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'StringMan'
+  ClientHeight = 707
+  ClientWidth = 553
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object edtPrefix: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 0
+    Position.X = 8.000000000000000000
+    Position.Y = 1.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Prefix Each Line With the Following'
+  end
+  object edtSuffix: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 1
+    Position.X = 8.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Suffix Each Line With the Following'
+  end
+  object memRaw: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 533.000000000000000000
+    Viewport.Height = 205.000000000000000000
+  end
+  object memFinal: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 533.000000000000000000
+    Viewport.Height = 205.000000000000000000
+  end
+  object btnProcess: TCornerButton
+    Anchors = [akRight, akBottom]
+    Position.X = 376.000000000000000000
+    Position.Y = 508.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 169.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Process'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = btnProcessClick
+  end
+  object btnClear: TCornerButton
+    Anchors = [akRight, akBottom]
+    Position.X = 376.000000000000000000
+    Position.Y = 540.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    Size.Width = 169.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Clear'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = btnClearClick
+  end
+  object progress: TProgressBar
+    Anchors = [akLeft, akBottom]
+    Hint = 'Progress'
+    Orientation = Horizontal
+    Position.X = 16.000000000000000000
+    Position.Y = 508.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnCopy: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 512.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = #10064
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = btnCopyClick
+  end
+  object notify: TNotificationCenter
+    Left = 488
+    Top = 576
+  end
+end
